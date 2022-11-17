@@ -1,0 +1,11 @@
+<h1>Login</h1>
+
+<%= form_tag '/login' do %>
+
+  <div class="form-group">Email: </div><%= text_field_tag :email %>
+
+  <div class="form-group">Password: </div><%= password_field_tag :password %>
+
+  <%= submit_tag "Submit",  class: ["btn btn-success"] %>
+
+<% end %>
